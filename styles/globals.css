@@ -1,0 +1,87 @@
+@import url('https://fonts.cdnfonts.com/css/better-saturday');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, 
+body, 
+#background {
+  overflow:visible; 
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(252, 231, 243)
+}
+
+
+
+.manely{
+  text-shadow: 0 0 5px #fff700, 0 0 7px #fff700, 0 0 10px #fff700, 0 0 20px #fff700, 0 0 30px #eaeaea, 0 0 10px #e100ff, 0 0 8px #f9f9f9;
+    color: #ffffa9;
+  font-family: "cormorant";
+  font-size: 3.75rem;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+
+}
+
+
+@media (min-width: 1024px) {
+  .manely{
+    text-align: center;
+  }
+  
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #fff700, 0 0 7px #fff700, 0 0 10px#fff700, 0 0 20px #fff700, 0 0 30px #f3eaea, 0 0 10px #ff8d00, 0 0 8px #f4f3f3;
+    color: #faf9ef;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+      text-shadow: 0 0 5px#fff700, 0 0 7px#fff700, 0 0 10px#ffdd00, 0 0 20px#ffdd00, 0 0 30px #eae7e7, 0 0 10px #e100ff, 0 0 8px #e4e4e4;
+      color:#faf9ef;
+  }
+}
+
